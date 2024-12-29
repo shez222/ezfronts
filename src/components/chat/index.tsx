@@ -44,7 +44,7 @@
 
 //     // Replace with your actual Socket.IO server URL or use environment variables
 //     const socketURL =
-//       process.env.NEXT_PUBLIC_SOCKET_URL || "http://localhost:5000/chat";
+//       process.env.NEXT_PUBLIC_SOCKET_URL || "https://app-3ba94cdb-1987-4b16-abb4-b031ff44a63c.cleverapps.io/chat";
 //     socket.current = io(socketURL);
 
 //     // Listen for initial messages
@@ -181,7 +181,7 @@ const Chat: React.FC<ChatProps> = ({ isOpen }) => {
 
     // Replace with your actual Socket.IO server URL or use environment variables
     const socketURL =
-      process.env.NEXT_PUBLIC_SOCKET_URL || "http://localhost:5000/chat";
+      process.env.NEXT_PUBLIC_SOCKET_URL || "https://app-3ba94cdb-1987-4b16-abb4-b031ff44a63c.cleverapps.io/chat";
     socket.current = io(socketURL);
 
     // Listen for initial messages

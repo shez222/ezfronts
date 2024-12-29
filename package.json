@@ -13,7 +13,7 @@
     "format": "prettier --write .",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
   },
-  "proxy": "http://localhost:5000/",
+  "proxy": "https://app-3ba94cdb-1987-4b16-abb4-b031ff44a63c.cleverapps.io/",
   "dependencies": {
     "@commitlint/config-conventional": "^17.6.7",
     "@emotion/cache": "^11.11.0",

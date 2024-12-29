@@ -29,7 +29,7 @@ const InventoryPage: React.FC<{
   const [token, setToken] = useState<string | null>(null);
 
   const SOCKET_SERVER_URL =
-    process.env.NEXT_PUBLIC_SOCKET_SERVER_URL || "http://localhost:5000";
+    process.env.NEXT_PUBLIC_SOCKET_SERVER_URL || "https://app-3ba94cdb-1987-4b16-abb4-b031ff44a63c.cleverapps.io";
 
 
   // Maximum number of items that can be selected

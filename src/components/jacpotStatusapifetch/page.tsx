@@ -12,7 +12,7 @@
 // import ItemBadge from "./itembadge"
 
 // const SOCKET_SERVER_URL =
-//   process.env.NEXT_PUBLIC_SOCKET_SERVER_URL || "http://localhost:5000";
+//   process.env.NEXT_PUBLIC_SOCKET_SERVER_URL || "https://app-3ba94cdb-1987-4b16-abb4-b031ff44a63c.cleverapps.io";
 
 // interface Item {
 //   _id: string;
@@ -379,7 +379,7 @@ import Modal from "../ModalInventory";
 import ItemBadge from "./itembadge";
 
 const SOCKET_SERVER_URL =
-  process.env.NEXT_PUBLIC_SOCKET_SERVER_URL || "http://localhost:5000";
+  process.env.NEXT_PUBLIC_SOCKET_SERVER_URL || "https://app-3ba94cdb-1987-4b16-abb4-b031ff44a63c.cleverapps.io";
 
 // Interfaces
 interface Item {

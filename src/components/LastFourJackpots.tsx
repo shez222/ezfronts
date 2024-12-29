@@ -45,7 +45,7 @@ const Tooltip: React.FC<{ content: React.ReactNode; children: React.ReactNode }>
 
 const SOCKET_SERVER_URL =
   process.env.NEXT_PUBLIC_SOCKET_SERVER_URL ||
-  "http://localhost:5000";
+  "https://app-3ba94cdb-1987-4b16-abb4-b031ff44a63c.cleverapps.io";
 
 // Fetch function for the last four jackpots
 const fetchLastFourJackpots = async (): Promise<Jackpot[]> => {
