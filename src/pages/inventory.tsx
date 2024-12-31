@@ -59,11 +59,13 @@ const InventoryPage: React.FC<{
         if (!response.ok) {
           throw new Error("Failed to fetch inventory");
         }
-
+    
         const data: InventoryResponse = await response.json();
         if (data.items.length === 0) {
-          setError("No Items in Inventory");
+          setError("No Item In Inventory. Visit the Market Page. Hurry Up!!!! and Enjoy The Game");
         } else {
+          console.log(data.items);
+          
           setInventory(data.items);
         }
       } catch (err: any) {
@@ -97,9 +99,9 @@ const InventoryPage: React.FC<{
 
   if (loading) return <p>Loading...</p>;
   if (error) 
-    return <div className="text-center text-slate-400 h-[40vh] w-2/3 mx-auto flex items-center justify-center">{error} <br/>
+    return <div className="text-center text-slate-400 h-[40vh] w-2/3 mx-auto flex items-center justify-center">{error} <br/> <br /><br />
             Note: If you have item in steam inventory and still not visible here, then there are two reasons may be that items are not tradeable or the items are not public.
-            </div>
+          </div>
 
 
   return (

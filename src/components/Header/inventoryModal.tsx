@@ -157,6 +157,8 @@ export default function InventoryModal() {
       );
 
       if (response.data.tradeOfferUrl) {
+        console.log(response.data);
+        
         setTradeOfferUrl(response.data.tradeOfferUrl);
         setTradeModalOpen(true);
         setSelectedItems([]);
@@ -166,6 +168,7 @@ export default function InventoryModal() {
       }
       setOpen(false);
     } catch (error: any) {
+      // setTradeUrlModalOpen(true);
       console.error(
         "Jackpot Deposit Error:",
         error.response ? error.response.data : error.message
